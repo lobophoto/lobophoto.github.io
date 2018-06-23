@@ -2,8 +2,8 @@
   "title": "萝卜摄影工作社",
   "icon": "",
   "contact": {
-    "phone" : "15820575739",
     "email": "314123618@qq.com",
+    "phone": "15820575739",
     "wechat": "LB1618225",
     "QRCode": "./QRcode.jpg",
     "LoboQRCode": "./LoboQRCode.jpg"
@@ -17,7 +17,7 @@
       "火山.jpg",
       "森林.jpg"
     ],
-    "雪原":[
+    "雪原": [
       "雪原.jpg",
       "雪原.jpg",
       "火山.jpg",
@@ -25,7 +25,7 @@
       "雪山.jpg",
       "沙漠.jpg"
     ],
-    "森林":[
+    "森林": [
       "森林.jpg",
       "雪原.jpg",
       "雪原.jpg",
@@ -34,27 +34,30 @@
       "火山.jpg",
       "森林.jpg"
     ],
-    "山川":[
+    "山川": [
       "山川.jpg",
       "火山.jpg",
       "火山.jpg",
-      "森林.jpg"      
+      "森林.jpg"
     ],
-    "雪山":[
+    "雪山": [
       "雪山.jpg",
       "火山.jpg",
       "火山.jpg",
       "火山.jpg",
-      "森林.jpg"      
+      "森林.jpg"
     ],
-    "沙漠":[
+    "沙漠": [
       "沙漠.jpg",
       "雪原.jpg",
       "雪原.jpg",
       "火山.jpg",
       "山川.jpg",
       "雪山.jpg",
-      "沙漠.jpg"      
+      "沙漠.jpg"
+    ],
+    "冰川": [
+      "d2ecbacacae0a4be1cce89efa4709a3b.jpg"
     ]
   }
 }
