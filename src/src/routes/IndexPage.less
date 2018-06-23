@@ -2,28 +2,43 @@
 .normal {
   font-family: Georgia, sans-serif;
   text-align: center;
-  background: #333;
+  background: rgb(14, 13, 13);
+  overflow: hidden;
   height: 100%;
 }
 
-.title {
-  font-size: 2.5rem;
-  font-weight: normal;
-  letter-spacing: -1px;
+.mask{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0, 0.6);
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: 0.7s;
 }
 
-.welcome {
-  height: 328px;
-  background-size: 388px 328px;
+.button{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, arial, sans-serif;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: lighter;
+  height: 35px;
+  line-height: 35px;
+  letter-spacing: 3px;
 }
 
-.list {
-  font-size: 1.2em;
-  margin-top: 1.8em;
-  list-style: none;
-  line-height: 1.5em;
+.button:hover{
+  background: white;
+  color: #333;
 }
 
-.list code {
-  background: #f7f7f7;
+.container:hover .mask{
+  opacity: 1;
 }
