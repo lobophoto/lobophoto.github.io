@@ -1,10 +1,11 @@
 import React from 'react';
 import { connect } from 'dva';
+import request from 'superagent';
+import _ from 'lodash';
+import { Link } from 'dva/router';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import styles from './IndexPage.less';
-import request from 'superagent';
-import _ from 'lodash';
 
 
 class IndexPage extends React.Component{
@@ -39,7 +40,7 @@ class IndexPage extends React.Component{
                   key={key}
                 >
                   <div className={styles.mask}>
-                    <a className={styles.button}> VIEW {key} </a>
+                    <Link className={styles.button} to={"/list/" + key}> VIEW {key} </Link>
                   </div>                
                   <div style={{
                     height: '100%',

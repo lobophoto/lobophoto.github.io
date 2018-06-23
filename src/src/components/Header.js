@@ -4,6 +4,7 @@ import styles from './Header.less';
 
 class Header extends React.Component{
   render(){
+    const { subtitle } = this.props;
     return (
       <header className={styles.header}>
         <div style={{ marginBottom: 30 }}>
@@ -20,6 +21,19 @@ class Header extends React.Component{
           fontSize: 15,
           opacity: 0.6
         }}>LOBO Photography</span>
+
+        {
+          subtitle && (
+            <div
+              style={{ 
+                  fontSize: 18 , fontFamily: 'serif', display: 'block', marginBottom: 10, letterSpacing: 5 ,
+                  marginTop: 20
+              }}
+            >
+              { subtitle }
+            </div>
+          )
+        }
       </header>
     )
   }
