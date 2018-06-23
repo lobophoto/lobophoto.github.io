@@ -1,6 +1,13 @@
 {
   "title": "萝卜摄影工作社",
   "icon": "",
+  "contact": {
+    "phone" : "15820575739",
+    "email": "314123618@qq.com",
+    "wechat": "LB1618225",
+    "QRCode": "./QRcode.jpg",
+    "LoboQRCode": "./LoboQRCode.jpg"
+  },
   "folders": {
     "火山": [
       "火山.jpg",

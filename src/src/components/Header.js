@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'dva/router'
 import LOGO from '../assets/lobo.png';
 import styles from './Header.less';
 
@@ -8,13 +9,24 @@ class Header extends React.Component{
     return (
       <header className={styles.header}>
         <div style={{ marginBottom: 30 }}>
-          <img  style={{height: 40 }} src={LOGO} alt="logo" />
+          <Link to="/">
+            <img  style={{height: 40 }} src={LOGO} alt="logo" />
+          </Link>
         </div>
-        <span 
-          style={{ fontSize: 18 , fontFamily: 'serif', display: 'block', marginBottom: 10, letterSpacing: 5 }}
+        <Link 
+          to="/" 
+          style={{ 
+            fontSize: 18 , 
+            fontFamily: 'serif', 
+            display: 'block', 
+            marginBottom: 10, 
+            letterSpacing: 5,
+            color: 'white',
+            textDecoration: 'none'
+          }}
         >
           萝卜摄影工作室
-        </span>
+        </Link>
         <span style={{
           letterSpacing: 8.6,
           fontFamily: 'cursive',
